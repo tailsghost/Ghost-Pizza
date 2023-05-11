@@ -1,0 +1,17 @@
+.root {
+  padding: 100px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  h3 {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+}

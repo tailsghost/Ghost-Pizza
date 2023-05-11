@@ -14,4 +14,3 @@
 - React Content Loader
 - React Pagination
 - Lodash.Debounce
-# Ghost-Pizza

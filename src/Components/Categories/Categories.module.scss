@@ -1,0 +1,41 @@
+@import '../../scss/vars.scss';
+@import '../../scss/mixins';
+
+.categories {
+  @media (max-width: 950px) {
+    overflow: scroll;
+    width: 100%;
+    height: 70px;
+    overflow-y: hidden;
+  }
+  ul {
+    display: flex;
+
+    li {
+      background-color: $activeColorButton;
+      padding: 13px 30px;
+      border-radius: 30px;
+      margin-right: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.1s ease-in-out;
+      @include noselect();
+
+      &:hover {
+        background-color: darken($activeColorButton, 2%);
+      }
+
+      &:active {
+        background-color: darken($activeColorButton, 5%);
+      }
+
+      &.active {
+        background-color: $activeColor;
+        color: $whiteColor;
+      }
+      @media (max-width: 650px) {
+        padding: 8px 20px;
+      }
+    }
+  }
+}
